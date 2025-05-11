@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { SectionHeadingSpacing } from "../utils/SectionHeadingSpacing";
-import { SectionHeading } from "../utils/SectionHeading";
-import { SectionSubheading } from "../utils/SectionSubheading";
-import { Card } from "../utils/Card";
-import { GhostButton } from "../buttons/GhostButton";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { SectionHeadingSpacing } from "@/components/utils/SectionHeadingSpacing";
+import { SectionHeading } from "@/components/utils/SectionHeading";
+import { SectionSubheading } from "@/components/utils/SectionSubheading";
+import { Card } from "@/components/utils/Card";
+import { GhostButton } from "@/components/buttons/GhostButton";
 import { FiCheck, FiX } from "react-icons/fi";
 
 export const Pricing = () => {

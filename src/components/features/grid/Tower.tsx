@@ -1,89 +1,9 @@
-import { SiGithub } from "react-icons/si";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { Card } from "../../utils/Card";
+'use client';
+
 import { motion } from "framer-motion";
-import {
-  FiAward,
-  FiBell,
-  FiGrid,
-  FiMail,
-  FiSettings,
-  FiUser,
-} from "react-icons/fi";
 import { useEffect, useState } from "react";
-import { CornerBlur } from "@/components/utils/CornerBlur";
-import { PulseLine } from "@/components/utils/PulseLine";
 
-export const Tower = () => {
-  return (
-    <div className="col-span-1 h-[600px] lg:col-span-4 lg:h-[600px]">
-      <Card>
-        <PulseLine />
-
-        <CalloutChip>Callout #1</CalloutChip>
-        <p className="mb-2 text-2xl">Show your product</p>
-        <p className="mb-8 text-zinc-400">
-          These cards are a great place to give a high level break down of what
-          your website is about. Try to talk about benefits instead of features.
-        </p>
-
-        <CornerBlur />
-        <Mockup />
-      </Card>
-    </div>
-  );
-};
-
-const Mockup = () => (
-  <div className="absolute -bottom-4 left-6 h-[340px] w-full overflow-hidden rounded-xl border border-zinc-700 bg-zinc-950/50 sm:h-[370px]">
-    <MockupTopBar />
-    <div className="flex h-full w-full">
-      <MockupSideBar />
-      <MockupMain />
-    </div>
-  </div>
-);
-
-const MockupSideBar = () => (
-  <div className="h-full w-24 border-r border-zinc-700 bg-zinc-900 p-2">
-    <div className="mb-4 flex items-center justify-between ">
-      <SiGithub className="text-zinc-700" />
-      <FiBell className="text-blue-500" />
-    </div>
-    <div className="space-y-2">
-      <div className="flex items-center gap-1 rounded bg-zinc-700 px-1 py-0.5 text-xs text-zinc-200">
-        <FiUser />
-        Users
-      </div>
-      <div className="flex items-center gap-1 rounded px-1 py-0.5 text-xs text-zinc-600">
-        <FiMail />
-        Campaigns
-      </div>
-      <div className="flex items-center gap-1 rounded px-1 py-0.5 text-xs text-zinc-600">
-        <FiAward />
-        Goals
-      </div>
-      <div className="flex items-center gap-1 rounded px-1 py-0.5 text-xs text-zinc-600">
-        <FiGrid />
-        Tools
-      </div>
-      <div className="flex items-center gap-1 rounded px-1 py-0.5 text-xs text-zinc-600">
-        <FiSettings />
-        Settings
-      </div>
-    </div>
-  </div>
-);
-
-const MockupTopBar = () => (
-  <div className="flex gap-1 border-b border-zinc-700 bg-zinc-950 p-2">
-    <div className="size-2 rounded-full bg-red-600"></div>
-    <div className="size-2 rounded-full bg-yellow-600"></div>
-    <div className="size-2 rounded-full bg-green-600"></div>
-  </div>
-);
-
-const MockupMain = () => {
+export const MockupMainClient = () => {
   const [users, setUsers] = useState([
     {
       name: "John Johnson",

@@ -1,14 +1,16 @@
+'use client';
+
 import React, { useState } from "react";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { Card } from "../utils/Card";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { Card } from "@/components/utils/Card";
 import { SiX } from "react-icons/si";
-import { BubbleButton } from "../buttons/BubbleButton";
+import { BubbleButton } from "@/components/buttons/BubbleButton";
 import { motion } from "framer-motion";
-import { useWindowSize } from "../utils/useWindowSize";
-import { CornerGrid } from "../utils/CornerGrid";
-import { SectionHeading } from "../utils/SectionHeading";
-import { SectionSubheading } from "../utils/SectionSubheading";
-import { SectionHeadingSpacing } from "../utils/SectionHeadingSpacing";
+import { useWindowSize } from "@/components/utils/useWindowSize";
+import { CornerGrid } from "@/components/utils/CornerGrid";
+import { SectionHeading } from "@/components/utils/SectionHeading";
+import { SectionSubheading } from "@/components/utils/SectionSubheading";
+import { SectionHeadingSpacing } from "@/components/utils/SectionHeadingSpacing";
 
 export const Customers = () => {
   const { width } = useWindowSize();

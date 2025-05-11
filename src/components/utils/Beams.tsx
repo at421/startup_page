@@ -1,6 +1,8 @@
+'use client';
+
 import React from "react";
-import { Beam } from "./Beam";
-import { useWindowSize } from "./useWindowSize";
+import { Beam } from "@/components/utils/Beam";
+import { useWindowSize } from "@/components/utils/useWindowSize";
 
 const GRID_BOX_SIZE = 32;
 const BEAM_WIDTH_OFFSET = 1;
