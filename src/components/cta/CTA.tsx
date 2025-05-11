@@ -1,11 +1,13 @@
+'use client';
+
 import React from "react";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { SplashButton } from "../buttons/SplashButton";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { SplashButton } from "@/components/buttons/SplashButton";
 import { FiArrowRight } from "react-icons/fi";
-import { GhostButton } from "../buttons/GhostButton";
+import { GhostButton } from "@/components/buttons/GhostButton";
 import { motion } from "framer-motion";
-import { GlowingChip } from "../utils/GlowingChip";
-import { useRouter } from "next/router";
+import { GlowingChip } from "@/components/utils/GlowingChip";
+import { useRouter } from "next/navigation";
 
 export const CTA = () => {
   const router = useRouter();

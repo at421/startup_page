@@ -1,6 +1,8 @@
+'use client';
+
 import React from "react";
-import { Card } from "../../utils/Card";
-import { CalloutChip } from "../../utils/CalloutChip";
+import { Card } from "@/components/utils/Card";
+import { CalloutChip } from "@/components/utils/CalloutChip";
 import { motion } from "framer-motion";
 import { FiLink } from "react-icons/fi";
 import { BubbleButton } from "@/components/buttons/BubbleButton";

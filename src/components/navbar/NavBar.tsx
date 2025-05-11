@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from "react";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { NavLogo } from "./NavLogo";
-import { NavLinks } from "./NavLinks";
-import { NavCTAs } from "./NavCTAs";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { NavLogo } from "@/components/navbar/NavLogo";
+import { NavLinks } from "@/components/navbar/NavLinks";
+import { NavCTAs } from "@/components/navbar/NavCTAs";
 import { useMotionValueEvent, useScroll, motion } from "framer-motion";
 
 export const NavBar = () => {
