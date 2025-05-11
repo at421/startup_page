@@ -1,6 +1,8 @@
+"use client";
+
 import { SiGithub } from "react-icons/si";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { Card } from "../../utils/Card";
+import { CalloutChip } from "@/components/utils/CalloutChip";
+import { Card } from "@/components/utils/Card";
 import { motion } from "framer-motion";
 import {
   FiAward,

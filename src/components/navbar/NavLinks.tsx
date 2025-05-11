@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "./NavLink";
+import { NavLink } from "@/components/navbar/NavLink";
 
 export const NavLinks = () => {
   return (

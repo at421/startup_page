@@ -50,10 +50,7 @@ export const Pricing = () => {
                 14-day free trial
               </GhostButton>
             }
-            benefits={[
-              { text: "Five workspaces", checked: true },
-              { text: "Email support", checked: true },
-              { text: "7 day data retention", checked: true },
+          data retention", checked: true },
               { text: "Custom roles", checked: true },
               { text: "Priority support", checked: false },
               { text: "SSO", checked: false },

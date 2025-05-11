@@ -1,3 +1,5 @@
+'use client';
+
 import React, { MouseEventHandler, useState } from "react";
 import { Markup } from "./Markup";
 import { Card } from "@/components/utils/Card";

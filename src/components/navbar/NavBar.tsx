@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
 import { NavLogo } from "./NavLogo";

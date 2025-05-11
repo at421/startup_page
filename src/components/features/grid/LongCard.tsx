@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { Card } from "../../utils/Card";
+import { CalloutChip } from "@/components/utils/CalloutChip";
+import { Card } from "@/components/utils/Card";
 import { AnimationProps, motion } from "framer-motion";
 import {
   SiAuth0,
@@ -12,6 +14,7 @@ import {
   SiTwilio,
   SiZapier,
 } from "react-icons/si";
+import { useWindowSize } from "@/components/utils/useWindowSize";
 
 export const LongCard = () => {
   return (
@@ -130,34 +133,6 @@ const SpinningLogos = () => {
       </motion.div>
     </div>
   );
-};
-
-interface Size {
-  width: number | undefined;
-  height: number | undefined;
-}
-
-const useWindowSize = () => {
-  const [windowSize, setWindowSize] = useState<Size>({
-    width: undefined,
-    height: undefined,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowSize;
 };
 
 const degreesToRadians = (degrees: number) => {

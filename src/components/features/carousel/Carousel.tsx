@@ -1,3 +1,5 @@
+'use client';
+
 import { Card } from "@/components/utils/Card";
 import { CornerBlur } from "@/components/utils/CornerBlur";
 import { SectionHeading } from "@/components/utils/SectionHeading";
