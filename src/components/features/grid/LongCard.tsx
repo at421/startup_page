@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { Card } from "../../utils/Card";
+import { CalloutChip } from "@/components/utils/CalloutChip";
+import { Card } from "@/components/utils/Card";
 import { AnimationProps, motion } from "framer-motion";
 import {
   SiAuth0,
@@ -12,6 +14,7 @@ import {
   SiTwilio,
   SiZapier,
 } from "react-icons/si";
+import { useWindowSize } from "@/components/utils/useWindowSize";
 
 export const LongCard = () => {
   return (
@@ -132,34 +135,6 @@ const SpinningLogos = () => {
   );
 };
 
-interface Size {
-  width: number | undefined;
-  height: number | undefined;
-}
-
-const useWindowSize = () => {
-  const [windowSize, setWindowSize] = useState<Size>({
-    width: undefined,
-    height: undefined,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowSize;
-};
-
 const degreesToRadians = (degrees: number) => {
   return degrees * (Math.PI / 180);
 };
@@ -191,26 +166,21 @@ const ICON_DATA = [
   },
 ];
 
-// Defines the distance from the center of the circle to the center
-// of the icons
 const RADIUS_TO_CENTER_OF_ICONS = {
   sm: 150,
   md: 225,
   lg: 325,
 };
-// Defines the width of the icon circles
 const ICON_WRAPPER_WIDTH = {
   sm: 40,
   md: 65,
   lg: 80,
 };
-// Defines the padding between the icon circles and the inner and outer rings
 const RING_PADDING = {
   sm: 8,
   md: 12,
   lg: 24,
 };
-// Defines the font size for logos
 const LOGO_FONT_SIZE = {
   sm: 18,
   md: 24,

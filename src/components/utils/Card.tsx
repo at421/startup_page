@@ -1,3 +1,5 @@
+'use client';
+
 import React, { CSSProperties, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";

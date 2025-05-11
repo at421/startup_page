@@ -1,6 +1,5 @@
-import React from "react";
-import { Card } from "../../utils/Card";
-import { CalloutChip } from "../../utils/CalloutChip";
+import { Card } from "@/components/utils/Card";
+import { CalloutChip } from "@/components/utils/CalloutChip";
 import { SiX } from "react-icons/si";
 import { CornerBlur } from "@/components/utils/CornerBlur";
 
