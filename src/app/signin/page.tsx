@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer/Footer";
 import { SignIn } from "@/components/signin/SignIn";
 import { Barlow } from "next/font/google";
 
