@@ -1,7 +1,7 @@
 import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
 import React from "react";
 import { CodeCard } from "./CodeCard";
-import { Minigrid } from "../../utils/Minigrid";
+import { Minigrid } from "../../utils/Minigrid"; // Assuming Minigrid is still in src/components/utils
 import { FiZap } from "react-icons/fi";
 import { Stepper } from "./Stepper";
 import { SectionHeadingSpacing } from "@/components/utils/SectionHeadingSpacing";

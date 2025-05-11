@@ -1,7 +1,9 @@
+'use client';
+
 import React from "react";
-import { SplashButton } from "../buttons/SplashButton";
-import { GhostButton } from "../buttons/GhostButton";
-import { useRouter } from "next/router";
+import { SplashButton } from "@/components/buttons/SplashButton";
+import { GhostButton } from "@/components/buttons/GhostButton";
+import { useRouter } from "next/navigation";
 
 export const NavCTAs = () => {
   const router = useRouter();

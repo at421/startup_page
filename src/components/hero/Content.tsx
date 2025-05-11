@@ -1,10 +1,12 @@
+'use client';
+
 import { FiArrowRight } from "react-icons/fi";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
 import { motion } from "framer-motion";
-import { SplashButton } from "../buttons/SplashButton";
-import { GhostButton } from "../buttons/GhostButton";
-import { GlowingChip } from "../utils/GlowingChip";
-import { useRouter } from "next/router";
+import { SplashButton } from "@/components/buttons/SplashButton";
+import { GhostButton } from "@/components/buttons/GhostButton";
+import { GlowingChip } from "@/components/utils/GlowingChip";
+import { useRouter } from "next/navigation";
 
 export const Content = () => {
   const router = useRouter();
