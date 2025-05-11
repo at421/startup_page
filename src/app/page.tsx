@@ -8,6 +8,13 @@ import { Hero } from "@/components/hero/Hero";
 import { Logos } from "@/components/logos/Logos";
 import { Pricing } from "@/components/pricing/Pricing";
 import { Barlow } from "next/font/google";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Your Site Title", // Replace with your actual title
+  description: "Your site description", // Replace with your actual description
+};
+
 
 const barlowFont = Barlow({
   subsets: ["latin"],
