@@ -5,7 +5,7 @@ import { CodeDemo } from "@/components/features/code/CodeDemo";
 import { FeatureGrid } from "@/components/features/grid/FeatureGrid";
 import { Stats } from "@/components/features/stats/Stats";
 import { Hero } from "@/components/hero/Hero";
-import { Logos } from "@/components/logos/Logos";
+import Logos from "@/components/logos/Logos";
 import { Pricing } from "@/components/pricing/Pricing";
 import { Barlow } from "next/font/google";
 import type { Metadata } from "next";
