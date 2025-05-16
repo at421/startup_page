@@ -1,6 +1,6 @@
 import React from "react";
-import { MaxWidthWrapper } from "../utils/MaxWidthWrapper";
-import { NavLogo } from "../navbar/NavLogo";
+import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { NavLogo } from "@/components/navbar/NavLogo";
 import { SiInstagram, SiX, SiYoutube } from "react-icons/si";
 import { IconType } from "react-icons";
 import Link from "next/link";

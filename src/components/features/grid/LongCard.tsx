@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
 import { CalloutChip } from "../../utils/CalloutChip";
 import { Card } from "../../utils/Card";

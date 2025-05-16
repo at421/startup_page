@@ -1,12 +1,14 @@
+'use client';
+
 import React from "react";
-import { CornerGrid } from "../utils/CornerGrid";
-import { NavLogo } from "../navbar/NavLogo";
+import { CornerGrid } from "@/components/utils/CornerGrid";
+import { NavLogo } from "@/components/navbar/NavLogo";
 import Link from "next/link";
-import { BubbleButton } from "../buttons/BubbleButton";
+import { BubbleButton } from "@/components/buttons/BubbleButton";
 import { SiGithub, SiX } from "react-icons/si";
-import { SplashButton } from "../buttons/SplashButton";
+import { SplashButton } from "@/components/buttons/SplashButton";
 import { FiArrowLeft } from "react-icons/fi";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 export const SignIn = () => {

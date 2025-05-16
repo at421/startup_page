@@ -4,11 +4,17 @@ import Carousel from "@/components/features/carousel/Carousel";
 import { CodeDemo } from "@/components/features/code/CodeDemo";
 import { FeatureGrid } from "@/components/features/grid/FeatureGrid";
 import { Stats } from "@/components/features/stats/Stats";
-import { Footer } from "@/components/footer/Footer";
 import { Hero } from "@/components/hero/Hero";
-import { Logos } from "@/components/logos/Logos";
+import Logos from "@/components/logos/Logos";
 import { Pricing } from "@/components/pricing/Pricing";
 import { Barlow } from "next/font/google";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Your Site Title", // Replace with your actual title
+  description: "Your site description", // Replace with your actual description
+};
+
 
 const barlowFont = Barlow({
   subsets: ["latin"],
@@ -28,7 +34,6 @@ export default function Home() {
       <Stats />
       <Pricing />
       <CTA />
-      <Footer />
     </main>
   );
 }
